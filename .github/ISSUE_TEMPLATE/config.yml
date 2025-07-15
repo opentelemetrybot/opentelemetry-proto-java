@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General questions
+    url: https://github.com/open-telemetry/opentelemetry-java/discussions
+    about: Please ask general questions about OpenTelemetry Java in the discussions forum.
+  - name: Community
+    url: https://opentelemetry.io/community/
+    about: Find more information about the OpenTelemetry community.

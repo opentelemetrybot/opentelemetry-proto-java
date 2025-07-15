@@ -1,0 +1,95 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[Bug]: "
+labels: ["Bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue!
+
+        Please provide as much detail as possible so we can help you resolve the issue.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: If possible, provide a recipe for reproducing the error.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to see?
+      description: A clear and concise description of what you expected to see.
+      placeholder: A clear and concise description of what you expected to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: What did you see instead?
+      description: A clear and concise description of what you saw instead.
+      placeholder: A clear and concise description of what you saw instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: version-artifacts
+    attributes:
+      label: What version and what artifacts are you using?
+      description: |
+        Artifacts: (e.g., `opentelemetry-proto`, which version, etc)
+        Version: (e.g., `v1.0.0`, `1eb551b`, etc)
+        How did you reference these artifacts? (excerpt from your `build.gradle`, `pom.xml`, etc)
+      placeholder: |
+        Artifacts: opentelemetry-proto
+        Version: v1.0.0
+        Reference: implementation 'io.opentelemetry:opentelemetry-proto:1.0.0'
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Information about your environment.
+      placeholder: |
+        Compiler: (e.g., "Temurin 17.0.7")
+        OS: (e.g., "Ubuntu 20.04")
+        Runtime (if different from JDK above): (e.g., "Oracle JRE 8u251")
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+      placeholder: Add any other context about the problem here.
+    validations:
+      required: false
+
+  - type: dropdown
+    attributes:
+      label: Tip
+      description: This element is static, used to render a helpful sub-heading for end-users and community members to help prioritize issues. Please leave as is.
+      options:
+        - <sub>[React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/) with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
+      default: 0
