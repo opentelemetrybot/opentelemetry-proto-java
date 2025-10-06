@@ -13,7 +13,7 @@ permissions:
 jobs:
   build:
     permissions:
-      contents: write # for creating the release
+      contents: write # required for pushing changes
     name: Build
     runs-on: ubuntu-latest
     steps:
