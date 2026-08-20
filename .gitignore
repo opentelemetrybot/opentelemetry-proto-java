@@ -3,6 +3,7 @@ build
 .gradle
 local.properties
 out/
+buildSrc/.kotlin/
 
 # Maven (proto)
 target
